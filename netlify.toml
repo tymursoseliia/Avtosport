@@ -1,0 +1,16 @@
+[images]
+  remote_images = [
+    "https://source.unsplash.com/.*",
+    "https://images.unsplash.com/.*",
+    "https://ext.same-assets.com/.*",
+    "https://ugc.same-assets.com/.*",
+    "https://i.pravatar.cc/.*",
+    "https://i.ytimg.com/.*",
+    "https://*.supabase.co/.*",
+    "https://i.ibb.co/.*"
+  ]
+
+[build]
+  command = "bun run build"
+  # publish = ".next" - НЕ НУЖНО для Next.js 15, Netlify сам знает куда смотреть
+
