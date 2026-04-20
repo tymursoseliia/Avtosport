@@ -13,7 +13,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block group mb-6 hover:opacity-80 transition-opacity">
-              <img src="/logo.png" alt="СД-СЕРВИС" className="h-24 lg:h-32 w-auto object-contain" />
+              <img src="/logo.png" alt="АВТОСПОРТ" className="h-24 lg:h-32 w-auto object-contain" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6 max-w-sm">
               Мы — ваш надёжный партнёр по покупке и доставке лучших автомобилей из Европы. Премиальный сервис без компромиссов.
@@ -76,18 +76,18 @@ export function Footer() {
                 </div>
                 <div>
                   <div className="text-muted-foreground text-xs mb-0.5">Адрес</div>
-                  <div className="text-muted-foreground group-hover:text-foreground text-sm font-medium transition-colors">214012, Смоленская область, г Смоленск, Ново-Московская ул, д. 2/8, офис 305</div>
+                  <div className="text-muted-foreground group-hover:text-foreground text-sm font-medium transition-colors">610048, Кировская область, г. Киров, ул. Московская, д. 166А, этаж/помещ. 2/15</div>
                 </div>
               </div>
             </li>
             <li>
-              <a href="mailto:sd-service@rambler.ru" className="flex items-start gap-3 group">
+              <a href="mailto:avtosport@rambler.ru" className="flex items-start gap-3 group">
                 <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center border border-slate-200/60 group-hover:border-primary/50 transition-colors shrink-0">
                   <Mail className="w-3.5 h-3.5 text-primary" />
                 </div>
                 <div>
                   <div className="text-muted-foreground text-xs mb-0.5">Email</div>
-                  <div className="text-muted-foreground group-hover:text-foreground text-sm font-medium transition-colors">sd-service@rambler.ru</div>
+                  <div className="text-muted-foreground group-hover:text-foreground text-sm font-medium transition-colors">avtosport@rambler.ru</div>
                 </div>
               </a>
             </li>
@@ -96,9 +96,10 @@ export function Footer() {
       </div>
 
       <div className="border-t border-slate-200/60 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-muted-foreground text-sm">
-          © {new Date().getFullYear()} СД-СЕРВИС. Все права защищены.
-        </p>
+        <div className="text-muted-foreground text-sm flex flex-col gap-1">
+          <p>© {new Date().getFullYear()} АВТОСПОРТ. Все права защищены.</p>
+          <p className="text-xs opacity-70">ИНН: 4345524612 | ОГРН: 1234300003410</p>
+        </div>
         <div className="flex flex-wrap items-center justify-center md:justify-end gap-6 text-sm">
           <Link href="/privacy" className="text-muted-foreground hover:text-muted-foreground transition-colors">
             Политика конфиденциальности

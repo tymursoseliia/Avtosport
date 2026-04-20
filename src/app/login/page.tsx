@@ -44,7 +44,7 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex flex-col items-center">
-            <div className="text-5xl font-bold text-[#0A2540] leading-none">СД-СЕРВИС</div>
+            <div className="text-5xl font-bold text-[#0A2540] leading-none">АВТОСПОРТ</div>
             <div className="text-xs font-semibold text-[#0A2540] tracking-[0.15em] uppercase mt-1">
               Авто из Европы
             </div>
@@ -71,7 +71,7 @@ export default function LoginPage() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="sd-service@rambler.ru"
+                placeholder="avtosport@rambler.ru"
                 required
                 className="h-12"
               />
