@@ -58,7 +58,7 @@ export default function CatalogPage() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="text-2xl text-gray-600">Загрузка...</div>
+        <div className="text-2xl text-muted-foreground">Загрузка...</div>
       </div>
     );
   }
@@ -75,7 +75,7 @@ export default function CatalogPage() {
 
         {/* Error Message */}
         {error && (
-          <div className="bg-red-500/10 border border-red-500/20 text-red-400 px-4 py-3 rounded-lg mb-8 flex items-center justify-between">
+          <div className="bg-red-950/200/10 border border-red-500/20 text-red-400 px-4 py-3 rounded-lg mb-8 flex items-center justify-between">
             <span>{error}</span>
             <Button
               onClick={fetchCars}
@@ -87,19 +87,19 @@ export default function CatalogPage() {
         )}
 
         {/* Filters */}
-        <div className="glass-panel border-slate-200/60 rounded-2xl p-6 mb-12 shadow-xl">
+        <div className="glass-panel border-border/50 rounded-2xl p-6 mb-12 shadow-xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <Input
               placeholder="Поиск по марке или модели..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="h-12 bg-white backdrop-blur-md border-slate-200/60 text-foreground placeholder:text-muted-foreground focus-visible:ring-primary focus-visible:border-primary transition-all"
+              className="h-12 bg-card backdrop-blur-md border-border/50 text-foreground placeholder:text-muted-foreground focus-visible:ring-primary focus-visible:border-primary transition-all"
             />
             <Select value={filterBudget} onValueChange={setFilterBudget}>
-              <SelectTrigger className="h-12 bg-white backdrop-blur-md border-slate-200/60 text-foreground focus:ring-primary transition-all">
+              <SelectTrigger className="h-12 bg-card backdrop-blur-md border-border/50 text-foreground focus:ring-primary transition-all">
                 <SelectValue placeholder="Все бюджеты" />
               </SelectTrigger>
-              <SelectContent className="bg-background border-slate-200/60 text-foreground">
+              <SelectContent className="bg-background border-border/50 text-foreground">
                 <SelectItem value="all">Все бюджеты</SelectItem>
                 <SelectItem value="500k">До 500 000 ₽</SelectItem>
                 <SelectItem value="1m">500 000 - 1 000 000 ₽</SelectItem>
@@ -114,7 +114,7 @@ export default function CatalogPage() {
                 setFilterBudget('all');
               }}
               variant="outline"
-              className="h-12 bg-transparent border-slate-300 text-foreground hover:bg-slate-50 hover:text-foreground"
+              className="h-12 bg-transparent border-slate-300 text-foreground hover:bg-muted/30 hover:text-foreground"
             >
               Сбросить фильтры
             </Button>
@@ -123,15 +123,15 @@ export default function CatalogPage() {
 
         {/* Cars Grid */}
         {filteredCars.length === 0 ? (
-          <div className="text-center py-20 glass-panel border-slate-200/60 rounded-2xl">
+          <div className="text-center py-20 glass-panel border-border/50 rounded-2xl">
             <p className="text-2xl text-muted-foreground">Автомобили не найдены</p>
             <p className="text-muted-foreground mt-2">Попробуйте изменить параметры поиска</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredCars.map((car) => (
-              <div key={car.id} className="glass-panel border-slate-200/60 rounded-2xl overflow-hidden shadow-lg group hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] flex flex-col h-full bg-white backdrop-blur-md">
-                <div className="relative h-56 bg-slate-50 overflow-hidden">
+              <div key={car.id} className="glass-panel border-border/50 rounded-2xl overflow-hidden shadow-lg group hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] flex flex-col h-full bg-card backdrop-blur-md">
+                <div className="relative h-56 bg-muted/30 overflow-hidden">
                   {car.images && car.images.length > 0 ? (
                     <img
                       src={car.images[0]}
@@ -175,14 +175,14 @@ export default function CatalogPage() {
                     <span className="font-medium">{car.mileage.toLocaleString()} км</span>
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground mb-4 bg-slate-50 rounded-lg p-3 border border-slate-200/60">
+                  <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground mb-4 bg-muted/30 rounded-lg p-3 border border-border/50">
                     <div className="flex flex-col gap-1">
                       <span className="text-muted-foreground">Двигатель</span>
                       <span className="text-muted-foreground font-medium">
                         {car.engine_volume ? `${car.engine_volume} л ` : ''}{car.fuel_type}
                       </span>
                     </div>
-                    <div className="flex flex-col gap-1 border-l border-slate-200/60 pl-2">
+                    <div className="flex flex-col gap-1 border-l border-border/50 pl-2">
                       <span className="text-muted-foreground">КПП / Привод</span>
                       <span className="text-muted-foreground font-medium">
                         {car.transmission}{car.drive_type ? ` / ${car.drive_type}` : ''}

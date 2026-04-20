@@ -43,7 +43,7 @@ export function Header() {
             href="https://t.me/Sdservice24"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full bg-slate-50 hover:bg-slate-50 border border-slate-200/60 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:border-primary/50 group"
+            className="w-10 h-10 rounded-full bg-muted/30 hover:bg-muted/50 border border-border/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:border-primary/50 group"
             title="Наш Telegram канал"
           >
             <Send className="w-4 h-4 text-muted-foreground group-hover:text-[#0088cc] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
@@ -52,7 +52,7 @@ export function Header() {
             href="https://max.ru/u/f9LHodD0cOJ3xGhjX3_bzt3hbn2mMkcuVqd-AqaGN00IyQj8UqGzpUvfg64"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full bg-slate-50 hover:bg-slate-50 border border-slate-200/60 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:border-primary/50 group"
+            className="w-10 h-10 rounded-full bg-muted/30 hover:bg-muted/50 border border-border/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:border-primary/50 group"
             title="Наш MAX мессенджер"
           >
             <MessageSquare className="w-4 h-4 text-muted-foreground group-hover:text-[#0088cc] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />

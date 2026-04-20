@@ -199,7 +199,7 @@ export default function ReviewsPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-background overflow-hidden border-b border-slate-200/60">
+      <section className="relative bg-background overflow-hidden border-b border-border/50">
         {/* Abstract Background Elements */}
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
           <div className="absolute w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] -top-1/2 -right-1/4 animate-pulse opacity-50" />
@@ -221,15 +221,15 @@ export default function ReviewsPage() {
       </section>
 
       {/* Video Reviews Grid */}
-      <section className="py-20 px-8 bg-card border-y border-slate-200/60 relative">
+      <section className="py-20 px-8 bg-card border-y border-border/50 relative">
         <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none" />
         <div className="max-w-screen-2xl mx-auto relative z-10">
           {loading ? (
-            <div className="text-center py-20 glass-panel border-slate-200/60 rounded-2xl">
+            <div className="text-center py-20 glass-panel border-border/50 rounded-2xl">
               <div className="text-xl text-muted-foreground">Загрузка видео-отзывов...</div>
             </div>
           ) : videoReviews.length === 0 ? (
-            <div className="text-center py-20 glass-panel border-slate-200/60 border-dashed rounded-2xl">
+            <div className="text-center py-20 glass-panel border-border/50 border-dashed rounded-2xl">
               <div className="text-6xl mb-6">🎥</div>
               <p className="text-foreground text-2xl font-bold mb-4">Пока нет видео-отзывов</p>
               <p className="text-muted-foreground text-lg">
@@ -241,7 +241,7 @@ export default function ReviewsPage() {
               {videoReviews.map((video) => (
                 <div
                   key={video.id}
-                  className="relative aspect-video bg-white backdrop-blur-md rounded-2xl overflow-hidden glass-panel border-slate-200/60 group hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+                  className="relative aspect-video bg-card backdrop-blur-md rounded-2xl overflow-hidden glass-panel border-border/50 group hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
                 >
                   <iframe
                     src={getEmbedUrl(video.video_url, video.platform)}
@@ -268,13 +268,13 @@ export default function ReviewsPage() {
             <div className="flex gap-4">
               <button
                 onClick={() => scroll('left')}
-                className="w-14 h-14 bg-slate-50 border border-slate-200/60 hover:bg-primary hover:border-primary text-foreground rounded-full flex items-center justify-center transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-md"
+                className="w-14 h-14 bg-muted/30 border border-border/50 hover:bg-primary hover:border-primary text-foreground rounded-full flex items-center justify-center transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-md"
               >
                 ←
               </button>
               <button
                 onClick={() => scroll('right')}
-                className="w-14 h-14 bg-slate-50 border border-slate-200/60 hover:bg-primary hover:border-primary text-foreground rounded-full flex items-center justify-center transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-md"
+                className="w-14 h-14 bg-muted/30 border border-border/50 hover:bg-primary hover:border-primary text-foreground rounded-full flex items-center justify-center transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-md"
               >
                 →
               </button>
@@ -289,7 +289,7 @@ export default function ReviewsPage() {
             {textReviews.map((review, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-80 lg:w-96 glass-panel border-slate-200/60 rounded-2xl flex flex-col hover:border-primary/30 transition-colors duration-300 p-6 shadow-xl"
+                className="flex-shrink-0 w-80 lg:w-96 glass-panel border-border/50 rounded-2xl flex flex-col hover:border-primary/30 transition-colors duration-300 p-6 shadow-xl"
               >
                 {/* Header with name */}
                 <div className="mb-4">
@@ -313,7 +313,7 @@ export default function ReviewsPage() {
                 </div>
 
                 {/* Footer with platform and rating */}
-                <div className="flex items-center justify-between pt-4 border-t border-slate-200/60 mt-auto">
+                <div className="flex items-center justify-between pt-4 border-t border-border/50 mt-auto">
                   <div className="flex items-center gap-3">
                     {review.platform === '2gis' ? (
                       <div className="bg-[#A4C400]/20 text-[#A4C400] border border-[#A4C400]/30 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">

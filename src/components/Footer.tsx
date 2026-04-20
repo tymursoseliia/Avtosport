@@ -19,10 +19,10 @@ export function Footer() {
               Мы — ваш надёжный партнёр по покупке и доставке лучших автомобилей из Европы. Премиальный сервис без компромиссов.
             </p>
             <div className="flex items-center gap-4">
-              <a href="https://t.me/Sdservice24" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center border border-slate-200/60 hover:border-[#0088cc] hover:bg-[#0088cc]/10 hover:text-[#0088cc] text-muted-foreground transition-all">
-                <Send className="w-4 h-4 ml-0.5" />
+              <a href="https://t.me/Sdservice24" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted/30 flex items-center justify-center border border-border/50 hover:border-[#0088cc] hover:bg-[#0088cc]/10 hover:text-[#0088cc] text-muted-foreground transition-all">
+                <Send className="w-4 h-4" />
               </a>
-              <a href="https://max.ru/u/f9LHodD0cOJ3xGhjX3_bzt3hbn2mMkcuVqd-AqaGN00IyQj8UqGzpUvfg64" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center border border-slate-200/60 hover:border-[#0088cc] hover:bg-[#0088cc]/10 hover:text-[#0088cc] text-muted-foreground transition-all">
+              <a href="https://max.ru/u/f9LHodD0cOJ3xGhjX3_bzt3hbn2mMkcuVqd-AqaGN00IyQj8UqGzpUvfg64" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted/30 flex items-center justify-center border border-border/50 hover:border-[#0088cc] hover:bg-[#0088cc]/10 hover:text-[#0088cc] text-muted-foreground transition-all">
                 <MessageSquare className="w-4 h-4" />
               </a>
             </div>
@@ -49,7 +49,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <a href="tel:+79383591091" className="flex items-start gap-3 group">
-                  <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center border border-slate-200/60 group-hover:border-primary/50 transition-colors shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-muted/30 flex items-center justify-center border border-border/50 group-hover:border-primary/50 transition-colors shrink-0">
                     <MessageCircle className="w-3.5 h-3.5 text-primary" />
                   </div>
                   <div>
@@ -60,7 +60,7 @@ export function Footer() {
               </li>
               <li>
                 <div className="flex items-start gap-3 group">
-                <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center border border-slate-200/60 group-hover:border-primary/50 transition-colors shrink-0">
+                <div className="w-8 h-8 rounded-full bg-muted/30 flex items-center justify-center border border-border/50 group-hover:border-primary/50 transition-colors shrink-0">
                   <Clock className="w-3.5 h-3.5 text-primary" />
                 </div>
                 <div>
@@ -71,7 +71,7 @@ export function Footer() {
             </li>
             <li>
                 <div className="flex items-start gap-3 group">
-                <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center border border-slate-200/60 group-hover:border-primary/50 transition-colors shrink-0">
+                <div className="w-8 h-8 rounded-full bg-muted/30 flex items-center justify-center border border-border/50 group-hover:border-primary/50 transition-colors shrink-0">
                   <MapPin className="w-3.5 h-3.5 text-primary" />
                 </div>
                 <div>
@@ -82,7 +82,7 @@ export function Footer() {
             </li>
             <li>
               <a href="mailto:avtosport@rambler.ru" className="flex items-start gap-3 group">
-                <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center border border-slate-200/60 group-hover:border-primary/50 transition-colors shrink-0">
+                <div className="w-8 h-8 rounded-full bg-muted/30 flex items-center justify-center border border-border/50 group-hover:border-primary/50 transition-colors shrink-0">
                   <Mail className="w-3.5 h-3.5 text-primary" />
                 </div>
                 <div>

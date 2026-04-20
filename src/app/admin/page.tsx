@@ -343,7 +343,7 @@ export default function AdminPage() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="text-2xl text-gray-600">Проверка доступа...</div>
+        <div className="text-2xl text-muted-foreground">Проверка доступа...</div>
       </div>
     );
   }
@@ -355,7 +355,7 @@ export default function AdminPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white border-b">
+      <header className="bg-card border-b">
         <div className="max-w-screen-2xl mx-auto px-8 py-6 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <div className="flex flex-col items-start">
@@ -399,7 +399,7 @@ export default function AdminPage() {
 
           {/* Cars Tab */}
           <TabsContent value="cars">
-            <form onSubmit={handleSubmit} className="bg-white rounded-lg p-8 shadow-sm">
+            <form onSubmit={handleSubmit} className="bg-card rounded-lg p-8 shadow-sm">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -620,11 +620,11 @@ export default function AdminPage() {
 
           {/* Manage Cars Tab */}
           <TabsContent value="manage">
-            <div className="bg-white rounded-lg p-8 shadow-sm">
+            <div className="bg-card rounded-lg p-8 shadow-sm">
               <h2 className="text-2xl font-bold text-[#0A2540] mb-6">Управление автомобилями</h2>
 
               {loadingCars ? (
-                <div className="text-center py-8 text-gray-600">Загрузка...</div>
+                <div className="text-center py-8 text-muted-foreground">Загрузка...</div>
               ) : cars.length === 0 ? (
                 <div className="text-center py-8 text-gray-500">
                   Пока нет добавленных автомобилей
@@ -655,7 +655,7 @@ export default function AdminPage() {
                             {car.brand} {car.model}
                           </h3>
 
-                          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-600 mb-3">
+                          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm text-muted-foreground mb-3">
                             <div>Год: <span className="font-medium">{car.year}</span></div>
                             <div>Пробег: <span className="font-medium">{car.mileage.toLocaleString()} км</span></div>
                             <div>Цена: <span className="font-medium text-green-600">{car.price.toLocaleString()} ₽</span></div>
@@ -720,7 +720,7 @@ export default function AdminPage() {
 
           {/* Videos Tab */}
           <TabsContent value="videos">
-            <div className="bg-white rounded-lg p-8 shadow-sm mb-8">
+            <div className="bg-card rounded-lg p-8 shadow-sm mb-8">
               <h2 className="text-2xl font-bold text-[#0A2540] mb-6">Добавить видео-отзыв</h2>
 
               <form onSubmit={handleVideoSubmit} className="space-y-6">
@@ -797,7 +797,7 @@ export default function AdminPage() {
             </div>
 
             {/* List of existing videos */}
-            <div className="bg-white rounded-lg p-8 shadow-sm">
+            <div className="bg-card rounded-lg p-8 shadow-sm">
               <h2 className="text-2xl font-bold text-[#0A2540] mb-6">Существующие видео-отзывы</h2>
 
               {videoReviews.length === 0 ? (
@@ -810,7 +810,7 @@ export default function AdminPage() {
                     <div key={video.id} className="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
                       <div className="flex-1">
                         <h3 className="font-semibold text-[#0A2540] mb-1">{video.title}</h3>
-                        <p className="text-sm text-gray-600 mb-1">
+                        <p className="text-sm text-muted-foreground mb-1">
                           Платформа: <span className="font-medium">{video.platform === 'rutube' ? 'Rutube' : 'YouTube'}</span>
                         </p>
                         <a

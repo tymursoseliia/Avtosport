@@ -63,7 +63,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-screen-2xl mx-auto px-6 flex flex-col items-center text-center mt-20">
-          <div className="inline-flex items-center justify-center px-4 py-1.5 mb-8 border border-white/20 rounded-full bg-white/5 backdrop-blur-sm animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          <div className="inline-flex items-center justify-center px-4 py-1.5 mb-8 border border-white/20 rounded-full bg-card/5 backdrop-blur-sm animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-white/80">
               Премиальный импорт
             </span>
