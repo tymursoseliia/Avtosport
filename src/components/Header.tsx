@@ -20,7 +20,7 @@ export function Header() {
       <div className="w-full max-w-screen-2xl px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <img src="/Gemini_Generated_Image_ldyb7bldyb7bldyb.jpeg" alt="АВТОСПОРТ" className="h-28 lg:h-32 w-auto object-contain transition-all duration-300 mix-blend-screen" />
+          <img src="/Gemini_Generated_Image_ldyb7bldyb7bldyb.png" alt="АВТОСПОРТ" className="h-28 lg:h-32 w-auto object-contain transition-all duration-300" />
         </Link>
 
         {/* Navigation */}
