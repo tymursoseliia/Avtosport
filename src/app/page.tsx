@@ -34,7 +34,7 @@ export default function Home() {
         .select('*')
         .eq('status', 'available')
         .order('created_at', { ascending: false })
-        .limit(4);
+        .limit(3);
 
       if (error) throw error;
       setCars(data || []);
@@ -185,7 +185,7 @@ export default function Home() {
               <p className="text-muted-foreground text-xl font-light">Каталог обновляется. В данный момент нет автомобилей в наличии.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
                {cars.map(car => (
                  <Link href="/catalog" key={car.id} className="group flex flex-col">
                     <div className="relative h-[300px] lg:h-[400px] mb-6 overflow-hidden bg-muted rounded-sm">

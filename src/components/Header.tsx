@@ -29,7 +29,7 @@ export function Header() {
             <Link 
               key={item} 
               href={item === 'Главная' ? '/' : `/${item === 'О нас' ? 'about' : item === 'Команда' ? 'team' : item === 'Отзывы' ? 'reviews' : 'catalog'}`}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group py-2"
+              className="text-base lg:text-lg font-medium text-muted-foreground hover:text-foreground transition-colors relative group py-2"
             >
               {item}
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-primary to-amber-500 scale-x-0 group-hover:scale-x-100 transform origin-left transition-transform duration-300 ease-out" />
