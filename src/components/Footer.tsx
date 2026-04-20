@@ -13,7 +13,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block group mb-6 hover:opacity-80 transition-opacity">
-              <img src="/Gemini_Generated_Image_ldyb7bldyb7bldyb.png" alt="АВТОСПОРТ" className="h-32 lg:h-40 w-auto object-contain" />
+              <img src="/Gemini_Generated_Image_ldyb7bldyb7bldyb.png" alt="АВТОСПОРТ" className="h-48 lg:h-64 w-auto object-contain" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6 max-w-sm">
               Мы — ваш надёжный партнёр по покупке и доставке лучших автомобилей из Европы. Премиальный сервис без компромиссов.
