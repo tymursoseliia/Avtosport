@@ -16,48 +16,48 @@
   }
 
   .text-glow {
-    text-shadow: 0 4px 20px rgba(197, 160, 89, 0.4);
+    text-shadow: 0 4px 20px rgba(37, 99, 235, 0.4); /* Blue glow */
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600;
   }
 }
 
 @layer base {
   :root {
-    /* Premium Motorsport Dark aesthetic */
-    --background: 240 10% 4%; /* Very dark grey/black */
-    --foreground: 0 0% 98%;
-    --card: 240 5% 8%; /* Slightly lighter for cards */
-    --card-foreground: 0 0% 98%;
-    --popover: 240 5% 8%;
-    --popover-foreground: 0 0% 98%;
+    /* Premium Blue Dark aesthetic */
+    --background: 222.2 84% 4.9%; /* Deep blue-black */
+    --foreground: 210 40% 98%; /* Off-white */
+    --card: 222.2 47.4% 11.2%; /* Dark slate blue */
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 47.4% 11.2%;
+    --popover-foreground: 210 40% 98%;
     
-    /* Primary brand color - Racing Red */
-    --primary: 0 100% 50%; /* Pure Red */
+    /* Primary brand color - Vibrant Blue */
+    --primary: 221.2 83.2% 53.3%; /* Blue 600 */
     --primary-foreground: 0 0% 100%;
     
-    /* Secondary - Slate grey/carbon */
-    --secondary: 240 4% 16%;
-    --secondary-foreground: 0 0% 98%;
+    /* Secondary - Slate blue */
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
     
-    --muted: 240 4% 16%;
-    --muted-foreground: 240 5% 65%;
-    --accent: 0 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%; /* Lighter grey-blue for better contrast */
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
     
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 240 4% 16%;
-    --input: 240 4% 16%;
-    --ring: 0 100% 50%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 221.2 83.2% 53.3%;
     
     --radius: 0.75rem;
     
     /* Chart Colors */
-    --chart-1: 0 100% 50%;
-    --chart-2: 240 5% 65%;
+    --chart-1: 221.2 83.2% 53.3%;
+    --chart-2: 215 20.2% 65.1%;
     --chart-3: 160 60% 45%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
