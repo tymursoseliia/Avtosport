@@ -148,7 +148,7 @@ export default function Home() {
             ].map((step, idx) => (
               <div key={idx} className="group cursor-pointer">
                 <div className="relative h-80 md:h-[450px] overflow-hidden mb-8 rounded-sm">
-                  <img src={step.img} alt={step.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 filter grayscale hover:grayscale-0" />
+                  <img src={step.img} alt={step.title} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-background/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
                 <div className="border-l-2 border-primary pl-6 py-1">
@@ -432,6 +432,18 @@ function ClientReviewsSection() {
     { name: "Екатерина Л.", text: "Получила свою новую машину, как и планировала! Довольна качеством и состоянием авто, а также отличным сервисом и четкостью на всех этапах.", carImage: "https://i.ibb.co/qMSXBdFL/photo-2026-01-14-12-40-43.jpg", rating: 4.9 },
     { name: "Максим Р.", text: "Решил купить авто из Европы и не ошибся. Все расходы и этапы были прозрачны, заранее, и автомобиль доставили вовремя. Очень рад, что выбрал вас!", carImage: "https://i.ibb.co/4GYrgJb/photo-2026-01-14-12-40-55.jpg", rating: 5.0 },
     { name: "Виктор С.", text: "Очень рекомендую этот способ покупки! Автомобиль пригнали в отличном виде, документы в порядке. Профессиональная команда, с которой приятно работать.", carImage: "https://i.ibb.co/j9jbH9vJ/photo-2026-01-19-12-55-04.jpg", rating: 5.0 },
+    { name: "Лариса Д.", text: "Автомобиль приехал в отличном состоянии. Как и обещали, проверка была быстрой. Весь процесс прошел гладко и без каких-либо сюрпризов.", carImage: "https://i.ibb.co/SDSkFmCB/photo-2026-01-19-13-00-11.jpg", rating: 5.0 },
+    { name: "Федор П.", text: "Спасибо за честность и профессионализм! Машина соответствует всем заявленным характеристикам. Процесс был прозрачным от начала до конца.", carImage: "https://i.ibb.co/dJfRt4YZ/photo-2026-01-26-17-10-30.jpg", rating: 5.0 },
+    { name: "Дмитрий В.", text: "Очень доволен качеством подбора и скоростью доставки. Цена действительно выгоднее, чем у дилеров. Получил именно то, что хотел!", carImage: "https://i.ibb.co/GLyBZ69/photo-2026-01-26-17-33-52.jpg", rating: 5.0 },
+    { name: "Сергей М.", text: "Отличный сервис! Помогли с выбором, организовали доставку, оформили все документы. Рекомендую всем, кто хочет купить авто из Европы.", carImage: "https://i.ibb.co/sJssx8HP/photo-2026-01-27-15-36-53.jpg", rating: 4.9 },
+    { name: "Алексей Т.", text: "Машина пришла в идеальном состоянии! Все как в описании. Спасибо за профессиональную работу и внимание к деталям.", carImage: "https://i.ibb.co/HLsdvDM2/photo-2026-01-30-13-27-51.jpg", rating: 5.0 },
+    { name: "Игорь П.", text: "Весь процесс занял меньше месяца. Отличная поддержка на всех этапах. Автомобиль полностью соответствует ожиданиям!", carImage: "https://i.ibb.co/TxzYwpTG/photo-2026-01-30-13-27-52.jpg", rating: 5.0 },
+    { name: "Анна В.", text: "Качество подбора на высоте, все документы в порядке. Очень довольна сотрудничеством! Автомобиль мечты получен.", carImage: "https://i.ibb.co/JWkRjMk2/photo-2026-02-05-13-08-15-2.jpg", rating: 5.0 },
+    { name: "Андрей Л.", text: "Профессиональный подход, честные цены, быстрая доставка. Всё на высшем уровне! Буду рекомендовать друзьям.", carImage: "https://i.ibb.co/Q3qS7MMH/photo-2026-02-05-13-08-15.jpg", rating: 4.9 },
+    { name: "Ельвира К.", text: "Получила автомобиль точно в срок. Вся информация была предоставлена заранее. Никаких скрытых платежей. Отличная работа!", carImage: "https://i.ibb.co/h1wMxhr0/photo-2026-02-12-13-08-08.jpg", rating: 5.0 },
+    { name: "Владимир Б.", text: "Очень доволен покупкой! Автомобиль в отличном состоянии, все документы оформлены правильно. Спасибо за качественную работу!", carImage: "https://i.ibb.co/213tpzZq/photo-2026-02-12-13-08-12.jpg", rating: 5.0 },
+    { name: "Константин Д.", text: "Приятно удивлен качеством сервиса. Весь процесс был прозрачным и понятным. Автомобиль соответствует всем ожиданиям!", carImage: "https://i.ibb.co/4BKx44M/photo-2026-02-03-13-15-49.jpg", rating: 5.0 },
+    { name: "Николай П.", text: "Превосходный опыт покупки! Команда профессионалов сделала всё быстро и качественно. Автомобиль мечты теперь у меня!", carImage: "https://i.ibb.co/DDf4dP2V/photo-2026-02-12-13-10-04.jpg", rating: 5.0 }
   ];
 
   const scroll = (direction: 'left' | 'right') => {
@@ -464,7 +476,7 @@ function ClientReviewsSection() {
           {reviews.map((review, index) => (
             <div key={index} className="flex-shrink-0 w-[350px] md:w-[450px] snap-start group">
               <div className="relative h-[250px] mb-8 overflow-hidden rounded-sm bg-muted">
-                <img src={review.carImage} alt={review.name} className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700" />
+                <img src={review.carImage} alt={review.name} className="w-full h-full object-cover transition-all duration-700" />
               </div>
               <div className="border-t border-foreground/10 pt-6">
                 <div className="flex justify-between items-center mb-4">
