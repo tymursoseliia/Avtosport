@@ -50,10 +50,10 @@ export function ContactDialog({ open, onOpenChange }: ContactDialogProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle className="text-center text-2xl font-bold text-[#0A2540]">
+          <DialogTitle className="text-center text-2xl font-bold text-foreground">
             Заявка на<br />консультацию
           </DialogTitle>
-          <p className="text-center text-sm text-gray-600 pt-2">
+          <p className="text-center text-sm text-muted-foreground pt-2">
             Бесплатно подберем автомобиль<br />
             по вашим критериям уже сегодня
           </p>
@@ -111,9 +111,9 @@ export function ContactDialog({ open, onOpenChange }: ContactDialogProps) {
 
               {formData.telegramType === 'phone' ? (
                 <div className="flex gap-2">
-                  <div className="flex items-center gap-2 h-12 px-3 bg-gray-50 border border-gray-200 rounded-md">
+                  <div className="flex items-center gap-2 h-12 px-3 bg-background border border-input rounded-md">
                     <span className="text-xl">🇷🇺</span>
-                    <span className="text-gray-500">+7</span>
+                    <span className="text-muted-foreground">+7</span>
                   </div>
                   <Input
                     type="tel"
@@ -137,9 +137,9 @@ export function ContactDialog({ open, onOpenChange }: ContactDialogProps) {
             </div>
           ) : (
             <div className="flex gap-2">
-              <div className="flex items-center gap-2 h-12 px-3 bg-gray-50 border border-gray-200 rounded-md">
+              <div className="flex items-center gap-2 h-12 px-3 bg-background border border-input rounded-md">
                 <span className="text-xl">🇷🇺</span>
-                <span className="text-gray-500">+7</span>
+                <span className="text-muted-foreground">+7</span>
               </div>
               <Input
                 type="tel"
@@ -174,7 +174,7 @@ export function ContactDialog({ open, onOpenChange }: ContactDialogProps) {
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             rows={3}
-            className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0A7ABF] resize-none"
+            className="w-full px-3 py-2 bg-background border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-foreground placeholder:text-muted-foreground resize-none"
           />
 
           {/* Submit Button */}
