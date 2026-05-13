@@ -1,0 +1,152 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+.breadcrumb a {
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+  color: var(--accent-orange);
+}
+
+.separator {
+  margin: 0 10px;
+}
+
+.current {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mainImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background-color: var(--bg-secondary);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.info {
+  background-color: var(--bg-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.year {
+  color: var(--accent-orange);
+}
+
+.priceBlock {
+  background-color: var(--bg-secondary);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 4px solid var(--accent-orange);
+}
+
+.priceRub {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.priceEuro {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.priceNote {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.specsList {
+  margin-bottom: 30px;
+}
+
+.specsTitle {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.specRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.specRow:last-child {
+  border-bottom: none;
+}
+
+.specLabel {
+  color: var(--text-muted);
+}
+
+.specVal {
+  font-weight: 600;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .info {
+    padding: 20px;
+  }
+  
+  .priceRub {
+    font-size: 1.8rem;
+  }
+}
